@@ -14,7 +14,7 @@ function createNewItem(newMovie) {
    let button = createButton('remove-button')
    movie.appendChild(button); 
 
-  list.appendChild(movie); // Adds movie to the list
+   list.appendChild(movie); // Adds movie to the list
 
 
 }
