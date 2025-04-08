@@ -1,0 +1,98 @@
+body {
+    font-family: 'Courier New', monospace; /* Retro typewriter font */
+    margin: 2em; /* Increased margin for a less cramped feel */
+    background-color: #0000ff; /* Blockbuster Blue */
+    color: #f0e68c; /* Khaki/light goldenrod - contrasting text */
+    line-height: 1.6; /* Improved readability */
+}
+
+h1 {
+    font-family: 'VT323', monospace; /* Another great retro display font */
+    color: #ffff00; /* Blockbuster Yellow */
+    text-align: center;
+    margin-bottom: 1.5em;
+    font-size: 2.5em; /* Slightly larger for emphasis */
+    letter-spacing: 0.1em; /* Subtle letter spacing */
+    text-shadow: 2px 2px #000; /* Add a slight shadow for depth */
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 1em;
+    padding: 0.5em; /* Subtle padding */
+    background-color: #fff; /* White for contrast */
+    border: 2px solid #ffff00; /* Blockbuster Yellow border */
+    border-radius: 5px; /* Soft rounded corners */
+}
+
+#newMovie {
+    flex-grow: 1;
+    padding: 0.75em;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    font-size: 1em;
+    font-family: 'Courier New', monospace;
+    background-color: transparent; /* Inherit background */
+    color: #333; /* Dark text for input */
+}
+
+#newMovie:focus {
+    outline: none; /* Minimalist focus style */
+    box-shadow: 0 0 5px rgba(255, 255, 0, 0.7); /* Yellow focus highlight */
+}
+
+#addButton {
+    background-color: #ffff00; /* Blockbuster Yellow */
+    color: #0000ff; /* Blockbuster Blue text */
+    border: none;
+    padding: 0.75em 1.2em;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: 'Courier New', monospace;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+    text-shadow: 1px 1px #000; /* Subtle shadow for button text */
+}
+
+#addButton:hover {
+    background-color: #e6e600; /* Slightly darker yellow on hover */
+}
+
+#wishlist {
+    list-style-type: none;
+    padding: 0;
+    border: 2px solid #ffff00; /* Blockbuster Yellow border */
+    border-radius: 5px;
+    background-color: #fff; /* White background for list */
+}
+
+#wishlist li {
+    padding: 0.75em 1em;
+    border-bottom: 1px dashed #0000ff; /* Dashed Blockbuster Blue border */
+    font-size: 1.1em; /* Slightly larger font size */
+    font-weight: bold; /* Make the font bold */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333; /* Dark text for list items */
+}
+
+#wishlist li:last-child {
+    border-bottom: none;
+}
+
+.remove-button {
+    background-color: transparent; /* No background color */
+    color: #ff0000; /* Red text */
+    border: none; /* No border */
+    padding: 0; /* Minimal padding */
+    cursor: pointer;
+    font-size: 1em; /* Adjust font size as needed */
+    font-family: sans-serif; /* A simple sans-serif font for minimalism */
+    opacity: 0.7; /* Slightly less prominent initially */
+    transition: opacity 0.3s ease;
+}
+
+.remove-button:hover {
+    opacity: 1; /* Fully visible on hover */
+}
