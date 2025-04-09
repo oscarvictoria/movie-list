@@ -27,3 +27,57 @@ function createButton(classes) {
 }
  
 createNewItem(newItem)
+
+// You can use the following node properties to navigate between nodes with JavaScript:
+
+// parentNode
+// childNodes[nodenumber]
+// firstChild
+// lastChild
+// nextSibling
+// previousSibling
+
+// InsertAdjacent Methods
+
+// <!-- beforebegin -->
+// <p>
+//   <!-- afterbegin -->
+//   foo
+//   <!-- beforeend -->
+// </p>
+// <!-- afterend -->
+
+function addNewMovie(film) {
+
+let firstMovie = list.firstElementChild; 
+
+
+let movie = document.createElement('li')
+movie.textContent = film
+let button = createButton('remove-button')
+movie.appendChild(button); 
+
+
+
+firstMovie.insertAdjacentElement('afterend', movie); 
+    
+}
+
+addNewMovie('Pulp fiction');
+
+function insertBefore(film) {
+let firstMovie = list.firstElementChild; 
+
+
+let movie = document.createElement('li')
+movie.textContent = film
+let button = createButton('remove-button')
+movie.appendChild(button); 
+
+
+
+firstMovie.insertAdjacentElement('beforebegin',movie)
+
+}
+
+insertBefore('Boyhood')
