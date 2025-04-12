@@ -101,13 +101,9 @@ function removeMovie(e) {
 }
 
 list.addEventListener('click', removeMovie)
-  
 
 
-
-
-
-
+// Removes All
 
 
 function remove() {
@@ -119,7 +115,7 @@ function remove() {
 
 button.onclick = remove; 
 
-// Add Functions 
+// Add Movie
 
 function addMoive() {
     createNewItem(newItem);
