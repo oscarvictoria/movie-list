@@ -82,15 +82,36 @@ firstMovie.insertAdjacentElement('beforebegin',movie)
 
 insertBefore('Boyhood')
 
+
+
 // Remove Functions 
 
 let button = document.querySelector('.clear'); 
 let clearAll = document.querySelectorAll('li'); 
 let addButton = document.querySelector('#addButton')
+let selectedItem = document.querySelectorAll('.remove-button'); 
+
+// Removes selected movie
+
+function removeMovie(e) {
+    if (e.target.classList.contains('remove-button')) {
+        e.target.parentNode.remove()
+    } 
+  
+}
+
+list.addEventListener('click', removeMovie)
+  
+
+
+
+
+
+
+
 
 function remove() {
-    
-   clearAll.forEach(item => {
+    clearAll.forEach(item => {
     item.remove()
    })
 
@@ -98,11 +119,15 @@ function remove() {
 
 button.onclick = remove; 
 
+// Add Functions 
+
 function addMoive() {
-    console.log('button clicked')
     createNewItem(newItem);
     
 }
 
+
+
 addButton.onclick = addMoive; 
+
 
