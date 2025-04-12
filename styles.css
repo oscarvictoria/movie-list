@@ -96,3 +96,14 @@ h1 {
 .remove-button:hover {
     opacity: 1; /* Fully visible on hover */
 }
+
+.clear {
+    background-color: yellow;
+    position: relative;
+    top: 20px;
+    bottom: 20px; /* Position it 20px from the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Center it horizontally */
+    font-size: 20px; /* Make the font bigger */
+    padding: 15px 30px; /* Add some padding for better visual */
+}
